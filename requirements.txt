@@ -1,0 +1,5 @@
+flask
+zeyrek
+joblib
+pandas
+nltk
