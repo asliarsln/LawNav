@@ -42,7 +42,7 @@ python app.py
 Ardından tarayıcıda şu adresi açın:
 
 ```text
-http://localhost:5000
+http://localhost:8080
 ```
 
 ## Proje yapısı
