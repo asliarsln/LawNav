@@ -21,7 +21,7 @@ Projenin teorik altyapısı ve yöntemleri akademik bir çalışmada ele alınm�
 ## Kullanılan teknolojiler
 
 - Backend: Python, Flask
-- NLP: Zeyrek, NLTK, Pandas, Joblib
+- NLP: Zeyrek, NLTK, Pandas
 - Frontend: HTML5, CSS3, JavaScript
 
 ## Nasıl çalışır
@@ -55,8 +55,7 @@ http://localhost:5000
     ├── index.html
     ├── result.html
     └── statics/
-        ├── style.css
-        └── theme.js
+        └── style.css
 ```
 
 ## Nasıl Çalışır
