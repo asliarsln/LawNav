@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="tr" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LawNav</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="/statics/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="header-inner">
+        <a href="/" class="logo" aria-label="LawNav Ana Sayfa">
+          <div class="logo-icon">
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+            </svg>
+          </div>
+          <span class="logo-name">Law<span>Nav</span></span>
+        </a>
+         
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h1>Size çözüm<br /><em>hukuk bölümünüzü</em> bulun</h1>
+        <p class="hero-desc">
+          Hukuki sorununuzu anlatın sistem hangi hukuk dalıyla ilgili olduğunu
+          belirlesin
+        </p>
+      </section>
+
+      <div class="form-card">
+        <form action="/predict" method="POST">
+          <label class="form-label" for="problemText">
+            Yaşadığınız sorun nedir?
+            <span>— dava özeti, sorun tanımı veya ilgili paragraf</span>
+          </label>
+          <textarea
+            id="problemText"
+            name="problemText"
+            placeholder="Örnek: Kiracı sözleşme süresinden önce evi boşalttı ve depozito iadesini reddediyor..."
+            required
+            oninput="
+              document.getElementById('charCount').textContent =
+                this.value.length + ' karakter'
+            "
+          ></textarea>
+          <div class="form-footer">
+            <span class="char-count" id="charCount">0 karakter</span>
+            <button type="submit" class="btn-primary">
+              Analiz Et
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </button>
+          </div>
+        </form>
+      </div>
+
+      </div>
+    </main>
+
+    <footer>
+      <p>
+        <span style="color: var(--color-text-muted)">Aslı Arslan</span>
+        &nbsp;·&nbsp; IECSR 2024, Zurich &nbsp;·&nbsp; LawNav
+      </p>
+    </footer>
+  </body>
+</html>
