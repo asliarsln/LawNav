@@ -59,6 +59,22 @@ http://localhost:5000
         └── theme.js
 ```
 
+## Nasıl Çalışır
+
+Proje, verinin işlenmesinden son kullanıcıya ulaşmasına kadar şu adımları takip eder:
+- Model Üretimi (model.ipynb): Hukuki terimler sözlüğü Zeyrek kütüphanesi ile morfolojik analize tabi tutulur. 
+- Kelimeler köklerine indirgenir ve optimize edilmiş veri yapısı hukukBolumleri.joblib dosyası olarak kaydedilir.
+- ullanıcı Girişi: Kullanıcı web arayüzü üzerinden hukuki sorununu iletir.
+- Analiz: Flask backend birimi, giden metni gerçek zamanlı olarak köklerine ayırır ve mevcut .joblib modeli ile en yüksek korelasyona sahip hukuk dalını eşleştirir.
+- Sonuç: Sistem, en olası hukuk alanını tahmin ederek kullanıcıyı yönlendirir.
+
+## Modeli Test İçin
+
+Projeyi bilgisayarınıza hiçbir şey indirmeden, doğrudan Google Colab üzerinde tarayıcınızdan test etmek için aşağıdaki butona tıklayabilirsiniz:
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/asliarsln/LawNav/blob/main/model.ipynb)
+
+
 ## Not
 
-Bu proje hukuki danışmanlık vermek için değil, kullanıcıyı ilgili hukuk alanına yönlendirmeye yardımcı olmak için geliştirilmiştir.
+Bu proje hukuki danışmanlık vermek için değil, kullanıcıyı ilgili hukuk alanına yönlendirmeye yardımcı olmak için geliştirilmiştir. Amacı, kullanıcıları yaşadıkları problemler doğrultusunda ilgili hukuk disiplinlerine dair bilgilendirmek ve farkındalık oluşturmaktır.
