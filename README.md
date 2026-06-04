@@ -70,7 +70,7 @@ Proje, verinin işlenmesinden son kullanıcıya ulaşmasına kadar şu adımlar�
 
 ## Modeli Test İçin
 
-Projeyi bilgisayarınıza hiçbir şey indirmeden, doğrudan Google Colab üzerinde tarayıcınızdan test etmek için aşağıdaki butona tıklayabilirsiniz:
+Modeli bilgisayarınıza hiçbir şey indirmeden, doğrudan Google Colab üzerinde tarayıcınızdan test etmek için aşağıdaki butona tıklayabilirsiniz:
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/asliarsln/LawNav/blob/main/model.ipynb)
 
